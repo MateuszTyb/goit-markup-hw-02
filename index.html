@@ -4,25 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet"> 
     <title>Zadanie 1</title>
   </head>
   <body>
     <header>
-      <a href="#mainweb">WebStudio</a>
+      <a class="logo" href="#mainweb">Web<span>Studio</span></a>
       <nav>
-        <ul>
-          <li><a href="#Agencja">Agencja</a></li>
-          <li><a href="#Portfolio">Portfolio</a></li>
-          <li><a href="#Kontakt">Kontakt</a></li>
+        <ul class="navigation-links">
+          <li><a class="nav-link" href="#Agencja">Agencja</a></li>
+          <li><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#Kontakt">Kontakt</a></li>
         </ul>
       </nav>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="phone:+48111111111">+48 111 111 111</a>
+      <a class="nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="nav-link" href="phone:+48111111111">+48 111 111 111</a>
     </header>
     <main>
-      <section>
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button">Zamów usługe</button>
+      <section class="hero">
+        <h1 class="hero-header">EFEKTYWNE ROZWIĄZANIA <br/> DLA WASZEGO BIZNESU</h1>
+        <button class="hero-button" type="button">Zamów usługe</button>
       </section>
       <div>
         <ul>
@@ -93,8 +97,8 @@
               height="260"
               alt="smiling man in glasses, with a short beard, and in a maroon buttoned shirt"
             />
-            <p>John Doe</p>
-            <p>Product Designer</p>
+            <p class="employee-name">John Doe</p>
+            <p class="employee-position">Product Designer</p>
           </li>
 
           <li>
@@ -104,8 +108,8 @@
               height="260"
               alt="smiling woman with long blonde hair, glasses and a darker jacket."
             />
-            <p>John Doe</p>
-            <p>Frontend Developer</p>
+            <p class="employee-name" >John Doe</p>
+            <p class="employee-position">Frontend Developer</p>
           </li>
 
           <li>
@@ -115,8 +119,8 @@
               height="260"
               alt="smiling man with short facial hair and blue buttoned shirt"
             />
-            <p>John Doe</p>
-            <p>Marketing</p>
+            <p class="employee-name">John Doe</p>
+            <p class="employee-position">Marketing</p>
           </li>
 
           <li>
@@ -126,8 +130,8 @@
               height="260"
               alt="smiling man in glasses, with medium facial hair, and in a black T-shirt"
             />
-            <p>John Doe</p>
-            <p>UI Designer</p>
+            <p class="employee-name">John Doe</p>
+            <p class="employee-position">UI Designer</p>
           </li>
         </ul>
       </section>

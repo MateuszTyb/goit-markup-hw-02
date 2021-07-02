@@ -6,6 +6,7 @@ body {
 a {
   text-decoration: inherit;
   cursor: pointer;
+  color: inherit;
 }
 
 .logo {
@@ -97,16 +98,16 @@ span {
 
 /* można zastosować selektor potomka zmniejszając ilość kodu, zmienijąc przy imieniu pracownika znacznik p na h3 */
 
-.employee-header{
-font-family:"Roboto", sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
+.employee-header {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-color: #212121;
+  color: #212121;
 }
 
 .employee-name {
@@ -131,3 +132,15 @@ color: #212121;
   color: #757575;
 }
 
+.footer {
+  background: #2f303a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+    color: #2196f3;
+
+footer span {
+  color: #fff;
+}

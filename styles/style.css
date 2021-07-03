@@ -175,10 +175,17 @@ a, button {
   text-decoration: none;
 }
 
-.footer-link {
-  color: #ffffff;
+.footer-adres{
+color: #ffffff;
 }
 
+.footer-link {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.footer-adres:hover,
+.footer-adres:focus,
 .footer-link:hover,
 .footer-link:focus {
   color: var(--secondary-color);

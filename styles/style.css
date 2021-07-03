@@ -1,6 +1,12 @@
+:root {
+  --main-font: "Roboto", "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-color: #212121;
+  --secondary-color: #2196f3;
+}
+
 body {
-  font-family: "Roboto", "Open Sans", "Raleway", sans-serif;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", "Open Sans", sans-serif;
 }
 
 a {
@@ -9,36 +15,66 @@ a {
   color: inherit;
 }
 
-.logo {
-  font-family: "Raleway", "Roboto", "Open Sans", sans-serif;
-  font-style: normal;
+/*--LOGO--*/
+
+.logo-lighttheme {
+  font-family: "Raleway", "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  color: #2196f3;
+  line-height: 1.192;
+  color: var(--secondary-color);
 }
-span {
-  color: #212121;
+
+.logo-lighttheme > span {
+  color: var(--main-color);
+}
+
+.logo-darktheme {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  color: var(--secondary-color);
+}
+
+.logo-darktheme > span {
+  color: #ffffff;
+}
+
+/*--LOGO--*/
+
+/*--Navigation--*/
+
+.nav-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .nav-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-color);
+}
+.nav-contacts:hover,
+.nav-contacts:focus,
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--secondary-color);
 }
 
-.nav-link:hover {
-  color: #2196f3;
-}
+/*--Navigation--*/
+
+/*--HERO--*/
 
 .hero-header {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.364;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -48,15 +84,13 @@ span {
   background-color: #2f303a;
 }
 
-.hero-button {
-  background: #2196f3;
+.hero-btn {
+  background: var(--secondary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   display: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -65,88 +99,131 @@ span {
   color: #ffffff;
 }
 
-.hero-button:focus
-.hero-button:hover {
-    background: #212121;
+.hero-btn:focus,
+.hero-btn:hover {
+  color: var(--main-color);
 }
 
+/*--HERO--*/
+
+/*--MAIN--*/
+
 .main-content h {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.143;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .main-content p {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 170%;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
 .about h2 {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
+
+/*--MAIN--*/
+
+/*--EMPLOYEE--*/
 
 /* można zastosować selektor potomka zmniejszając ilość kodu, zmienijąc przy imieniu pracownika znacznik p na h3 */
 
 .employee-header {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: #212121;
+  color: var(--main-color);
 }
 
 .employee-name {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
   font-weight: 500;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .employee-position {
-  font-family: "Roboto", "Open Sans", sans-serif;
-  font-style: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
-  font-weight: normal;
   color: #757575;
 }
 
+/*--EMPLOYEE--*/
+
+/*--FOOTER--*/
+
 .footer {
   background: #2f303a;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
-.footer a:hover
-.footer a:focus {
-    color: #2196f3;
-
-footer span {
-  color: #fff;
+.footer-link {
+  color: #ffffff;
 }
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--secondary-color);
+}
+.footer span {
+  color: #ffffff;
+}
+
+/*--FOOTER--*/
+
+/*--Portfolio--*/
+
+.galler-nav-list {
+}
+
+.gallery-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  width: 121px;
+  height: 38px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border-color: #f5f4fa;
+}
+
+.gallery-btn:hover,
+.gallery-btn:focus {
+  background: var(--secondary-color);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.gallery-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-font);
+}
+
+.gallery-list-subtitle {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/*--Portfolio--*/

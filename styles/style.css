@@ -10,14 +10,11 @@ body {
   color: #212121;
 }
 
-a {
+a, button {
   text-decoration: inherit;
   cursor: pointer;
   color: inherit;
-}
 
-button{
-  cursor: pointer
 }
 
 /*--LOGO--*/

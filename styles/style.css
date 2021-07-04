@@ -3,6 +3,8 @@
   --secondary-font: "Raleway", sans-serif;
   --main-color: #212121;
   --secondary-color: #2196f3;
+  --third-color: #ffffff;
+  --additional-color:  #757575;
 }
 
 body {
@@ -40,7 +42,7 @@ a, button {
 }
 
 .logo-darktheme > span {
-  color: #ffffff;
+  color: var(--third-color)
 }
 
 /*--LOGO--*/
@@ -52,7 +54,7 @@ a, button {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--additional-color)
 }
 
 .nav-link {
@@ -79,7 +81,7 @@ a, button {
   line-height: 1.364;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color:var(--third-color);
 }
 
 .hero {
@@ -97,7 +99,7 @@ a, button {
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
-  color: #ffffff;
+  color:var(--third-color);
 }
 
 .hero-btn:focus,
@@ -121,7 +123,7 @@ a, button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--additional-color);
 }
 
 .about h2 {
@@ -162,7 +164,7 @@ a, button {
   line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color:var(--additional-color);
 }
 
 /*--EMPLOYEE--*/
@@ -171,16 +173,16 @@ a, button {
 
 .footer {
   background: #2f303a;
-  color: #ffffff;
+  color:var(--third-color);
   text-decoration: none;
 }
 
 .footer-adres{
-color: #ffffff;
+  color:var(--third-color);
 }
 
 .footer-link {
-  color: #ffffff;
+  color:var(--third-color);
   opacity: 0.6;
 }
 
@@ -191,7 +193,7 @@ color: #ffffff;
   color: var(--secondary-color);
 }
 .footer span {
-  color: #ffffff;
+  color:var(--third-color);
 }
 
 /*--FOOTER--*/
@@ -215,9 +217,8 @@ color: #ffffff;
 .gallery-btn:hover,
 .gallery-btn:focus {
   background: var(--secondary-color);
-  color: #ffffff;
-  border-color: #ffffff;
-}
+  color:var(--third-color);
+  border-color: var(--third-color);
 
 .gallery-list-title {
   font-weight: 700;
@@ -231,7 +232,7 @@ color: #ffffff;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--additional-color);
 }
 
 /*--Portfolio--*/
